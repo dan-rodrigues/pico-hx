@@ -1,0 +1,10 @@
+# nextpnr
+
+/*.bin
+/*.json
+/*.asc
+
+# Build artefacts
+
+/*.h
+

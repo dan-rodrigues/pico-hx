@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RPi_Pico)(type Legacy)(uri ${KIPRJMOD}/lib/RPi_Pico.lib)(options "")(descr ""))
+)

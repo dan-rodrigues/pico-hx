@@ -1,0 +1,85 @@
+# Clock from RP2040
+
+set_io clk_in 49
+
+# LEDs
+set_io led[0] 44
+set_io led[1] 45
+set_io led[2] 47
+set_io led[3] 48
+set_io led[4] 52
+set_io led[5] 56
+set_io led[6] 58
+set_io led[7] 60
+
+# Buttons
+
+set_io btn_a 34
+set_io btn_b 33
+
+# PSRAM / Flash
+
+set_io psram_sck 38
+set_io psram_csn 43
+set_io psram_io[0] 37
+set_io psram_io[1] 42
+set_io psram_io[2] 41
+set_io psram_io[3] 39
+
+# RP2040 GPIO
+
+set_io rp_io[0] 107
+set_io rp_io[1] 106
+set_io rp_io[2] 105
+set_io rp_io[3] 104
+set_io rp_io[4] 102
+set_io rp_io[5] 101
+set_io rp_io[6] 99
+set_io rp_io[7] 98
+
+set_io rp_sio[0] 94
+set_io rp_sio[1] 93
+
+# PMOD-A
+
+set_io pmod_a1 19
+set_io pmod_a2 7
+set_io pmod_a3 3
+set_io pmod_a4 1
+set_io pmod_a7 20
+set_io pmod_a8 8
+set_io pmod_a9 4
+set_io pmod_a10 2
+
+# PMOD-B
+
+set_io pmod_b1 28
+set_io pmod_b2 25
+set_io pmod_b3 23
+set_io pmod_b4 21
+set_io pmod_b7 29
+set_io pmod_b8 26
+set_io pmod_b9 24
+set_io pmod_b10 22
+
+# PMOD-C
+
+set_io pmod_c1 143
+set_io pmod_c2 141
+set_io pmod_c3 138
+set_io pmod_c4 129
+set_io pmod_c7 144
+set_io pmod_c8 142
+set_io pmod_c9 139
+set_io pmod_c10 137
+
+# PMOD-D
+
+set_io pmod_d1 122
+set_io pmod_d2 120
+set_io pmod_d3 118
+set_io pmod_d4 116
+set_io pmod_d7 128
+set_io pmod_d8 121
+set_io pmod_d9 119
+set_io pmod_d10 117

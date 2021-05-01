@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RPi_Pico)(type KiCad)(uri ${KIPRJMOD}/lib/RPi_Pico.pretty)(options "")(descr ""))
+  (lib (name PMOD)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/PMOD.pretty)(options "")(descr ""))
+)
