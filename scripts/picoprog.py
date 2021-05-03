@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# vgm_reader.py
+# picoprog.py
 #
 # Copyright (C) 2021 Dan Rodrigues <danrr.gh.oss@gmail.com>
 #
