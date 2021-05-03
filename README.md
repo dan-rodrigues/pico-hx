@@ -25,7 +25,7 @@ This is an FPGA board that combines an iCE40 HX FPGA with the Raspberry Pi Pico.
 
 All iCE40 configuration pins are routed to the RP2040 GPIO so the details of how or when it is programmed are up to the software. The included software in this repo will make the Pico present itself is a USB device with these interfaces:
 
-* Vendor programmer interface: This is how the user can program the iCE40 at any time over USB, using the included picoprog.py script.
+* Vendor programmer interface: This is how the user can program the iCE40 at any time over USB, using the included [picoprog.py](scripts/picoprog.py) script.
 * CDC UART: This UART is separate to the hardware UART that is available on the dedicated pin header. By default, `stdout` is sent to the CDC UART for convenience.
 
 ### FPGA clock
@@ -64,7 +64,7 @@ After the Pico software is flashed, it's ready to program the iCE40 using a cust
 pip3 install pyusb
 ```
 
-It can then be programmed with similar usage to [iceprog](https://github.com/YosysHQ/icestorm/tree/master/iceprog). The programmer script is [scripts/picoprog.py](scripts/picoprog.py).
+It can then be programmed with similar usage to [iceprog](https://github.com/YosysHQ/icestorm/tree/master/iceprog). The programmer script is [picoprog.py](scripts/picoprog.py).
 
 ```
 ./picoprog.py bitstream.bit
