@@ -39,6 +39,15 @@ There is only a 1.2v regulator on the board as the Pico provides a 3.3v output. 
 ### PIO support
 
 The 10 GPIOs connected to the FPGA and 4 GPIOs connected to the SD card slot are in consecutive order, so PIO can be used.
+
+## Demo
+
+A demo that displays several test patterns controlled by BTN-A and blinks the LEDs in succession can be found in [rtl/demo](rtl/demo).
+
+```
+cd rtl/demo
+make prog
+```
  
 ## Usage
 
@@ -57,6 +66,8 @@ make
 The software can then be flashed using `picotool` for example. Default behaviour of the software is to immediately flash the iCE40 with an included bitstream that runs a counter with output to the 8 user LEDs.
 
 ### Programming iCE40 bitstream
+
+It's assumed that the OSS FPGA toolchain is installed which includes [yosys](https://github.com/YosysHQ/yosys) and [nextpnr-ice40](https://github.com/YosysHQ/nextpnr).
 
 After the Pico software is flashed, it's ready to program the iCE40 using a custom USB driver script. The script is written in Python3 and requires [pyusb](https://github.com/pyusb/pyusb).
 

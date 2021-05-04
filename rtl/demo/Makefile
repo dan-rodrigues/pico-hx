@@ -12,6 +12,14 @@ SOURCES := \
 	$(TOP).v \
 	debouncer.v
 
+VIDEO_SOURCES := $(addprefix video/, \
+	vga_timing.v \
+	vga_core.v \
+	dvi-12bit.v \
+	)
+
+SOURCES += $(VIDEO_SOURCES)
+
 ###
 
 main: $(PROJ).bin
@@ -32,9 +40,14 @@ count: $(SOURCES)
 %.h: %.bin
 	xxd -i $^ > $@
 
+###
+
+prog: $(PROJ).bin
+	../../scripts/picoprog.py $<
+
 clean:
 	rm -f $(PROJ).bin $(PROJ).asc $(PROJ).json $(PROJ).h
 
 .SECONDARY:
-.PHONY: main header clean
+.PHONY: main header clean prog
 
