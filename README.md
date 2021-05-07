@@ -3,6 +3,7 @@
 This is an FPGA board that combines an iCE40 HX FPGA with the Raspberry Pi Pico. The Pico can program the FPGA over USB using a script included in this repo and then interact with it using GPIO.
 
 ![PCB rendering](doc/render.png)
+![PCB DVI demo](doc/pcb1.jpg)
 
 ## Features
 
