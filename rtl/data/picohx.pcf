@@ -4,14 +4,14 @@ set_io clk_in 49
 
 # LEDs
 
-set_io led[0] 44
-set_io led[1] 45
-set_io led[2] 47
-set_io led[3] 48
-set_io led[4] 52
-set_io led[5] 56
-set_io led[6] 58
-set_io led[7] 60
+set_io led[0] 60
+set_io led[1] 58
+set_io led[2] 56
+set_io led[3] 52
+set_io led[4] 48
+set_io led[5] 47
+set_io led[6] 45
+set_io led[7] 44
 
 # Buttons
 
