@@ -2,7 +2,14 @@
 
 This is an FPGA board that combines an iCE40 HX FPGA with the Raspberry Pi Pico. The Pico can program the FPGA over USB using a script included in this repo and then interact with it using GPIO.
 
+## KiCad rendering
+
 ![PCB rendering](doc/render.png)
+
+## DVI Demo
+
+Pictured is an included DVI demo. First, the RP2040 was programmed with the USB software which then exposes a USB programmer device to the host. Then, the FPGA configuration containing the DVI test pattern config was uploaded from the host to the RP2040, which then programmed the FPGA, which then displayed the test pattern on screen. [This DVI PMOD](https://1bitsquared.com/collections/fpga/products/pmod-digital-video-interface) was used.
+
 ![PCB DVI demo](doc/pcb1.jpg)
 
 ## Features
